@@ -1,3 +1,4 @@
+**List Comprehension**
 Imagine you have a box of Legos (your list).
 List comprehension is like a magic machine that builds a new box of Legos based on the first one.
 You tell the machine what to do to each Lego (like squaring a number).
