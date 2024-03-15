@@ -1,0 +1,23 @@
+**Set operations**
+
+1. **Union (|)**:
+   - The union of two sets combines all unique elements from both sets.
+   - Syntax: `A | B` or `A.union(B)`
+   - Example: If we have sets `A = {0, 2, 4, 6, 8}` and `B = {1, 2, 3, 4, 5}`, their union is `{0, 1, 2, 3, 4, 5, 6, 8}`¹.
+
+2. **Intersection (&)**:
+   - The intersection of two sets contains elements that are common to both sets.
+   - Syntax: `A & B` or `A.intersection(B)`
+   - Example: For the same sets `A` and `B`, their intersection is `{2, 4}`¹.
+
+3. **Difference (-)**:
+   - The difference between sets `A` and `B` includes elements present in `A` but not in `B`.
+   - Syntax: `A - B` or `A.difference(B)`
+   - Example: The difference between `A` and `B` is `{8, 0, 6}`¹.
+
+4. **Symmetric Difference (^)**:
+   - The symmetric difference of sets `A` and `B` consists of elements that are in either `A` or `B`, but not both.
+   - Syntax: `A ^ B` or `A.symmetric_difference(B)`
+   - Example: The symmetric difference of `A` and `B` is `{0, 1, 3, 5, 6, 8}`¹.
+
+Remember, sets in Python are powerful for handling unique elements and performing these operations efficiently! 
