@@ -1,3 +1,25 @@
+**Definition, call, positional and keyword parameter, Default parameters, variable,number of arguments, Recursion, Callbacks, Closure.**
+
+Think of a function like a machine with slots.
+Definition: You build the machine (function) with a name and slots (parameters) for information (arguments).
+Call: You use the machine by giving it the information (arguments) it needs through the slots (parameters).
+Types of Slots:
+
+Order Matters Slots (Positional): These slots only work if you fill them in the exact order they were built (defined).
+Name Tags (Keyword): These slots don't care about order, as long as you clearly label the information (argument) with the slot's name (parameter).
+Optional Extras:
+
+Default Fillings: Some slots can come pre-filled (default parameters) if you don't provide your own information (argument).
+Extra Bins (Variable Arguments): The machine can have special bins (*args, **kwargs) to handle a bunch of extra information (arguments) you might give it.
+Special Techniques:
+
+Calling Itself (Recursion): Imagine the machine has a button that makes it restart itself (call itself) with smaller pieces of the information (arguments) until it's done.
+Passing the Machine as Information (Callbacks): You can give another machine (function) this machine (function) as information (argument) to be used later.
+Remembering Secrets (Closures): The machine can secretly remember some information (variables) from where it was built, even after it's been used (called).
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **1. Lambda Functions (The Mini-Me Function):**
 
 * Think of a lambda function as a tiny, one-time-use function you create on the spot.
