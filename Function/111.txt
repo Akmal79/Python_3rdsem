@@ -1,0 +1,60 @@
+
+**1. Lambda Functions:**
+
+* Lambda functions are anonymous functions defined using the `lambda` keyword.
+* They are used for short, concise expressions, often within other functions.
+* Syntax: `lambda arguments: expression`
+
+**Example:**
+
+```python
+add_ten = lambda x: x + 10
+result = add_ten(5)  # result will be 15
+```
+
+**2. Map Function:**
+
+* The `map()` function applies a function to all elements of an iterable (like a list or tuple).
+* It creates a new iterator containing the results of the function applied to each element.
+
+**Example:**
+
+```python
+numbers = [1, 2, 3, 4]
+squared_numbers = map(lambda x: x * x, numbers)  # squared_numbers is an iterator
+print(list(squared_numbers))  # Output: [1, 4, 9, 16]
+```
+
+**3. Filter Function:**
+
+* The `filter()` function creates a new iterator containing elements from an iterable that pass a test condition.
+* It takes a function and an iterable as arguments. The function is applied to each element, and only elements for which the function returns `True` are included in the new iterator.
+
+**Example:**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+even_numbers = filter(lambda x: x % 2 == 0, numbers)  # even_numbers is an iterator
+print(list(even_numbers))  # Output: [2, 4]
+```
+
+**4. Reduce Function:**
+
+* The `reduce()` function applies a function cumulatively to the items of an iterable, reducing it to a single value.
+* It takes a function and an iterable as arguments. The function is applied to the first two elements, then the result is applied to the third element, and so on.
+
+**Example:**
+
+```python
+from functools import reduce  # reduce is in the functools module
+
+numbers = [1, 2, 3, 4]
+product = reduce(lambda x, y: x * y, numbers)  # product will be 24
+print(product)
+```
+
+**Key Points:**
+
+* Lambda functions are often used within `map`, `filter`, and `reduce` to define the logic applied to elements.
+* `map` and `filter` create new iterators, while `reduce` produces a single value.
+* These functions can be powerful tools for concise and efficient data manipulation in Python.
