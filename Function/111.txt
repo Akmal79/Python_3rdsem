@@ -1,3 +1,42 @@
+**1. Definition:**
+
+In programming, a definition specifies the characteristics of something. It can refer to:
+
+* **Function definition:** This outlines the name, parameters (if any), and body (the code) that defines what the function does.
+* **Variable definition:** This creates a named storage location in memory to hold data.
+
+**2. Call:**
+
+A function call is how you execute the code defined in a function. You provide the function name and any required arguments within parentheses.
+
+**3. Positional and Keyword Parameters:**
+
+* **Positional parameters:** These are arguments passed to a function in the order they are defined in the function definition. The first argument matches the first parameter, the second argument matches the second parameter, and so on.
+* **Keyword parameters:** These arguments are passed by name, allowing you to specify which parameter you're providing a value to. This is useful when the order of arguments doesn't matter or you want to skip optional parameters.
+
+**4. Default Parameters:**
+
+Default parameters are pre-assigned values for function parameters. If no value is provided during the function call, the default value is used. This makes functions more flexible and avoids errors when optional arguments are omitted.
+
+**5. Variable Number of Arguments:**
+
+* In Python, functions can accept a variable number of arguments using techniques like:
+    * `*args`: This captures all remaining positional arguments as a tuple within the function.
+    * `**kwargs`: This captures all remaining keyword arguments as a dictionary within the function.
+
+**6. Recursion:**
+
+A function is recursive if it calls itself within its own definition. This allows you to solve problems by breaking them down into smaller, similar subproblems. However, it's important to have a base case to prevent infinite recursion.
+
+**7. Callbacks:**
+
+A callback is a function passed as an argument to another function. The receiving function then calls the callback function at a specific point in its execution. This allows for flexible and modular code.
+
+**8. Closure:**
+
+A closure is a special kind of function that remembers and accesses variables from its enclosing scope even after the enclosing function has finished executing. This creates a "closed" environment where the inner function can access data from the outer function. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **1. Lambda Functions:**
 
