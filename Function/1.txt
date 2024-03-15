@@ -1,0 +1,27 @@
+**1. Lambda Functions (The Mini-Me Function):**
+
+* Think of a lambda function as a tiny, one-time-use function you create on the spot.
+* You give it a quick instruction (like adding 10) and some data (like a number), and it zips out the answer without a fancy name.
+* Example: You want to add 10 to everything in your list. Instead of writing a whole function, you can use a lambda like a mini-calculator:`add_ten = lambda x: x + 10`.
+* Here, `x` is any number you throw at it, and it adds 10.
+
+**2. Map Function (The Element-Wise Changer):**
+
+* Imagine you have a list of numbers and want to do the same thing to all of them, like squaring them.
+* The `map` function acts like a magic map that applies your instruction (squaring in this case) to each element in your list, one by one.
+* It doesn't change the original list, but it creates a new one with the transformed elements.
+
+**3. Filter Function (The Chooser):**
+
+* Say you have a list of numbers and only want the even ones.
+* The `filter` function acts like a picky eater, going through your list and picking out only the elements that meet your criteria (even numbers in this case).
+* Again, it creates a new list with only the chosen elements.
+
+**4. Reduce Function (The Accumulator):**
+
+* This one's a bit more advanced. Imagine you have a list of numbers and want to find the total sum.
+* The `reduce` function acts like a snowball rolling down a hill, accumulating things as it goes.
+* It takes your instruction (like multiplication) and applies it to the first two elements in your list,
+* then takes the result and combines it with the third element, and so on, until it gets to the end, giving you a single answer (the total sum in our case).
+
+Remember, lambda functions are often used with `map`, `filter`, and `reduce` to tell them what to do with your data. 
