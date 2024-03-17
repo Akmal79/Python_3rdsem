@@ -1,0 +1,5 @@
+1.Write a python function to multiply all elements in a list
+
+2.write a python program to get the largest number from a list
+
+3.write a python program to get a list sorted by in increasing order from the last element in each tuple from a given list of non empty tuple
