@@ -4,7 +4,24 @@ In Python, files are collections of data stored on your computer's disk. They ac
 
 - **Text files:** These store human-readable characters, typically encoded in ASCII or Unicode format. Examples include code files (like `.py` files), configuration files, and plain text documents.
 - **Binary files:** These store non-textual data, often in a format specific to a particular application. Examples include images (`.jpg`, `.png`), audio files (`.mp3`, `.wav`), and executable programs (`.exe`).
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+File Handling Operations
+
+Python provides built-in functions and modules for interacting with files:
+open(filename, mode): This function is the cornerstone of file handling. It opens a file specified by its filename and returns a file object. The mode argument determines how the file will be accessed:
+
+"r" (read): Opens the file for reading existing content (throws an error if the file doesn't exist).
+"w" (write): Opens the file for writing, creating a new file if it doesn't exist (overwrites existing content).
+"a" (append): Opens the file for appending content at the end, creating a new file if it doesn't exist.
+"r+" (read/write): Opens the file for both reading and writing (careful with modifying while reading).
+"b" (binary): Used with any mode to indicate binary file handling.
+
+file_object.read(): Reads the entire content of the file as a string (for text mode) or bytes (for binary mode).
+file_object.readline(): Reads a single line from the file as a string (text mode only).
+file_object.readlines(): Reads all lines from the file as a list of strings (text mode only).
+file_object.write(data): Writes the specified data (string for text mode, bytes for binary mode) to the file.
+file_object.close(): Essential to release system resources associated with the file object. It's generally recommended to use a with statement for automatic closing (discussed later).
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Advantages of Files**
 
 - **Persistence:** Data in files survives program termination, allowing you to access and manipulate it later.
